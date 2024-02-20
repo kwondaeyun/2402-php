@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <caption><h1>회원가입을 환영합니다</h1></caption>
+    <!-- 캡션 쓸 필요 없음-->
+    <form action="https://www.naver.com">
+        <fieldset>
+            <legend>사용자 정보</legend>
+            <ul>
+                <li><label for="input-id">아이디</label>
+                    <input type="text" name="input_id" id="input_id" placeholder="4자 ~ 10자 사이 공백없이"
+                    minlength="4" maxlength="10"></li> 
+                
+                    <li><label for="input-email">이메일</label> 
+                    <input type="text" name="input_email" id="input_email"></li>
+                
+                <li><label for="input_pw">비밀번호</label>
+                    <input type="password" name="input_pw" id="input_pw" placeholder="문자와 숫자 특수 기호 포함"></li>
+                
+                <li><label for="input_pwchk">비밀번호 확인</label>
+                    <input type="password" name="input pwchk" id="input-pwchk"></li>
+                <li><label for="input-id">가입 경로</label>
+                    <select name="gita" id="gita">
+                        <option value="0">기타</option>>
+                        <li><label for="ID"></label></li>
+                    </select>
+                <li><label for="memo">메모</label>
+                    <textarea cols="30" rows="10" placeholder="남길 말씀이 있다면여기에"></textarea></li>
+                <!-- textarea 쓸 때 여는 태그와 닫는 태그 사이에 공백이 안들어가도록 조심--> 
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>이벤트와 새로운 소식</legend>
+            <input type="radio" name="mail" id="radio_mailsend">
+            <label for="radio_mailsend>"></label>           
+            <label for="radio-1">메일 수신</label>
+            <input type="radio" name="mail" id="radio-2">
+            <label for="radio-2">메일 수신 안 함</label>
+        </fieldset>
+
+        <input type="submit" value="가입하기">
+        <input type="reset" value="취소">
+    </form>
+
+</body>
+</html>
